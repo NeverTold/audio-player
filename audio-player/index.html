@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets//favicon.ico">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/img/lemonade.png" alt="Cover" class="thumbunals">
+        <div class="player column-wrapper">
+            <div class="player-controls row-wrapper">
+                <button class="play"></button>
+                <div class="artist-wrapper column-wrapper">
+                    <div class="artist">Beyonce</div>
+                    <div class="song">Don't Hurt Yourself</div>
+                </div>
+                <div class="column-wrapper">
+                    <button class="nextsong button-size"></button>
+                    <button class="prevsong button-size"></button>
+                </div>
+            </div>
+            <div class="time column-wrapper">
+                <div class="duration-time">3:53</div>
+                <input type="range" name="time" id="songtime">
+                <div class="current-time">0</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

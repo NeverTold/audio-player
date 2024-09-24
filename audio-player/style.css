@@ -64,6 +64,10 @@ body {
     -webkit-mask-size: cover;
     mask-size: cover;
     margin: 0 0.5rem;
+    transition: 500ms;
+}
+.play:hover, .nextsong:hover, .prevsong:hover {
+    filter: invert(50%);
 }
 .pause {
     mask: url(assets/svg/pause.png) no-repeat center;
@@ -92,11 +96,13 @@ body {
     mask: url(assets/svg//forward.png) no-repeat center;
     -webkit-mask-size: cover;
     mask-size: cover;
+    transition: 500ms;
 }
 .prevsong {
     mask: url(assets/svg/backward.png) no-repeat center;
     -webkit-mask-size: cover;
     mask-size: cover;
+    transition: 500ms;
 }
 .time {
     width: 50%;
@@ -118,6 +124,7 @@ body {
 #songtime::-webkit-slider-thumb {
     -webkit-appearance: none;
     margin-top: -0.175rem;
+    margin-left: 0;
     height: 0.625rem;
     width: 0.5rem;
     border: 0;
